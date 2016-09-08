@@ -136,8 +136,7 @@ Ensure Python 2.7.x
 
 Ensure pip version \>= 7
 
-### Ensure pip is updated to the latest version
-### miniconda users may need to install pip first, using 'conda install pip'
+### Ensure pip is updated to the latest version, miniconda users may need to install pip first, using 'conda install pip'
 
     conda update pip
 
