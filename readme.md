@@ -141,7 +141,7 @@ Ensure pip version \>= 7
 
     conda update pip
 
-Install GraphLab Create
+### Install GraphLab Create
 
 ## Install your licensed copy of GraphLab Create
 
@@ -161,7 +161,7 @@ Install GraphLab Create
 
     jupyter notebook
 
-### Run
+# Run
 
     Calculate users, add graph metrics, add categorical tags.ipynb
 
