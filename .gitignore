@@ -1,0 +1,40 @@
+
+.DS_Store
+.idea/
+include/
+lib/
+Would skip repository pre-processing/abe/bitcoin-abe
+Would skip repository pre-processing/bitcluster/Bitcluster
+Would skip repository pre-processing/bitcoindata
+Would skip repository pre-processing/bitcoingraph-old/bitcoingraph
+Would skip repository pre-processing/bitcoingraph-old/entity-plugin
+Would skip repository pre-processing/bitcointools/bitcointools
+Would skip repository pre-processing/bitgraph/bitcoingraph
+pre-processing/bitgraph/.DS_Store
+Would skip repository pre-processing/latest_blocks/watch-blockchain
+pre-processing/.DS_Store
+pre-processing/.ipynb_checkpoints
+pre-processing/brugere
+pre-processing/dato-example
+pre-processing/processed-data
+/pre-processing/brugere/
+/pre-processing/abe/
+/pre-processing/latest_blocks/
+/pre-processing/bitcoindata/
+/pre-processing/bitcoingraph-old/
+/pre-processing/.ipynb_checkpoints/
+/pre-processing/bitcluster/
+/pre-processing/dato-example/
+/pre-processing/processed-data/
+/notebooks/backtrace.0
+/notebooks/output/
+/notebooks/.ipynb_checkpoints/
+/notebooks/save-path/
+/lib/
+/include/
+/code/graph-code/data/
+/code/graph-code/output/
+/code/graph-code/genesis_data/
+/code/identity_scraper/data/
+/code/identity_scraper/output/
+/code/twitter-sentiment/output.csv
