@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<iframe src="http://192.168.99.100:32779/app/kibana#/visualize/edit/Sentiment-over-time?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-4h,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(vis:(colors:(negative:%23BF1B00))),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(customInterval:'5m',extended_bounds:(),field:timestamp,interval:custom,min_doc_count:1),schema:segment,type:date_histogram),(id:'3',params:(field:sentiment,order:desc,orderBy:'1',size:5),schema:group,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),title:'Sentiment%20over%20time',type:histogram))"
+        height="600" width="800"></iframe>
+
+
+{% endblock %}

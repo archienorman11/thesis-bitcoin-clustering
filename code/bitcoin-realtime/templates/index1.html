@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="terminal">
+
+    <div></div>
+    <pre>
+        <p id="messages"></p>
+    </pre>
+</div>
+
+
+</div>
+
+
+<script>
+    var total = 0;
+    var btcs = new WebSocket('wss://ws.blockchain.info/inv');
+
+    btcs.onopen = function () {
+        btcs.send(JSON.stringify({"op": "unconfirmed_sub"}));
+    };
+
+    btcs.onmessage = function (onmsg) {
+
+        var response = JSON.parse(onmsg.data);
+        var amount = response.x.out[0].value;
+        var addr = response.x.out[0].addr;
+        var spent = response.x.out[0].spent;
+        var size = response.x.size;
+        var index = response.x.tx_index;
+        var calAmount = amount / 100000000;
+        console.log(response);
+
+        if ($('#messages p.tx').length == 10) {
+            $('#messages p.tx').last().remove();
+        }
+        $('#messages').prepend("<p class='tx'>$ " + index + "|" + size + "|" + addr + "|" + "$" + calAmount + "|" + spent + "</p>");
+    }
+</script>
+
+{% endblock %}

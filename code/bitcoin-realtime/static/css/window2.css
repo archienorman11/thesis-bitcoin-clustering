@@ -1,0 +1,110 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: #1C174B;
+}
+
+p {
+    margin: 0;
+}
+
+@keyframes blink {
+    0%, 49% {
+        background: white;
+    }
+    50%, 100% {
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+.container {
+    width: 90%
+}
+
+.terminal {
+    position: relative;
+    margin: 1em auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 12px;
+    width: 50%;
+    height: 50%;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+
+.terminal::before, .terminal::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    width: .95em;
+    height: .95em;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-right: .1em;
+    background: #EB6B40;
+}
+
+.terminal::after {
+    background: #888;
+    left: 20px;
+}
+
+.terminal div {
+    padding: 5px 5px 5px 35px;
+    height: 25px;
+    background: #3c404b;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(#56585D, #2F3034);
+}
+
+.terminal div::before {
+    content: '';
+    display: inline-block;
+    width: .95em;
+    height: .95em;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-right: .1em;
+    background: #888;
+}
+
+.terminal div::after {
+    content: 'archienorman-thesis';
+    background: 0;
+    font-family: Andale Mono, monospace;
+    padding-left: 8px;
+    position: relative;
+    top: -2px;
+}
+
+.terminal pre {
+    background: #4F204B;
+    margin: 0;
+    padding: .5em .6em;
+}
+
+.terminal pre::selection {
+    background: #fff;
+    color: #4F204B;
+}
+
+/*.terminal pre::after {*/
+/*content: '$';*/
+/*text-indent: -1em;*/
+/*display: inline-block;*/
+/*width: .7em;*/
+/*height: 1.1em;*/
+/*margin-left: 1em;*/
+/*animation-name: blink;*/
+/*animation-duration: 1.2s;*/
+/*animation-iteration-count: infinite; }*/
+
+/*# sourceMappingURL=window1.css.map */

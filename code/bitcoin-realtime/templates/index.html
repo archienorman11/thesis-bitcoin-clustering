@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="window">
+    <div class="titlebar">
+        <div class="buttons">
+            <div class="close">
+                <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+                <!-- close button link -->
+            </div>
+            <div class="minimize">
+                <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+                <!-- minimize button link -->
+            </div>
+            <div class="zoom">
+                <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+                <!-- zoom button link -->
+            </div>
+        </div>
+        archienorman-thesis $ realtime_bitcoin
+        <!-- window title -->
+    </div>
+    <div class="content">
+        <div id="messages"></div>
+        <!-- window content -->
+    </div>
+</div>
+
+
+<script>
+    var total = 0;
+    var btcs = new WebSocket('wss://ws.blockchain.info/inv');
+
+    btcs.onopen = function () {
+        btcs.send(JSON.stringify({"op": "unconfirmed_sub"}));
+    };
+
+    btcs.onmessage = function (onmsg) {
+        var response = JSON.parse(onmsg.data);
+        var amount = response.x.out[0].value;
+        var calAmount = amount / 100000000;
+        console.log(response);
+
+        if ($('#messages p.tx').length == 16) {
+            $('#messages p.tx').last().remove();
+        }
+        $('#messages').prepend("<p class='tx'> Amount: " + calAmount + "</p>");
+    }
+</script>
+
+{% endblock %}
