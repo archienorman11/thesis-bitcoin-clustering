@@ -111,7 +111,7 @@ The following CSV files are created (with separate header files):
 
 The following command computes entities for a given blockchain data dump:
 
-    bcgraph-compute-entities -i blocks_0_1000
+    bcgraph-compute-entities -i blocks_417500_424572
 
 Two additional files are created:
 
