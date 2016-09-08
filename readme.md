@@ -1,6 +1,10 @@
 Archie Norman - Classification of Bitcoin transactions based on supervised machine learning and transaction network metrics.
 
+Abstract: The Bitcoin currency is a publicly available, transparent, large scale network in which every single transaction can be analysed. Multiple tools are used to extract binary information, pre-process data and train machine learning models from the decentralised blockchain. As Bitcoin popularity increases both with consumers and businesses alike, this paper looks at the threat to privacy faced by users through commercial adoption by deriving user attributes, transaction properties and inherent idioms of the network. We define the Bitcoin network protocol, describe heuristics for clustering, mine the web for publicly available user information and finally train supervised learning models. We show that two machine learning algorithms perform  successfully in clustering the Bitcoin transactions based on only graphical metrics measured from the transaction network. The Logistic Regression algorithm achieves an F1 score of 0.731 and the Support Vector Machines achieves an F1 score of 0.727. This work demonstrates the value of machine learning and network analysis for business intelligence; on the other hand it also reveals the potential threats to user privacy. 
+
 ## Prerequesites
+
+Please note that installing the bitcoin blockchain and running all scripts may take ~ 10 days as the blockchain download is around 160GB and needs to be indexed.
 
 ### Bitcoin Core setup and configuration
 
@@ -122,32 +126,32 @@ Two additional files are created:
 
 Ensure Python 2.7.x
 
-# Create a new conda environment with Python 2.7.x
+## Create a new conda environment with Python 2.7.x
 
     conda create -n gl-env python=2.7 anaconda
 
-# Activate the conda environment
+## Activate the conda environment
 
     source activate gl-env
 
 Ensure pip version \>= 7
 
-# Ensure pip is updated to the latest version
-# miniconda users may need to install pip first, using 'conda install pip'
+### Ensure pip is updated to the latest version
+### miniconda users may need to install pip first, using 'conda install pip'
 
     conda update pip
 
 Install GraphLab Create
 
-# Install your licensed copy of GraphLab Create
+## Install your licensed copy of GraphLab Create
 
     pip install --upgrade --no-cache-dir https://get.graphlab.com/ \
     GraphLab-Create/2.1/your registered email address here/your product \
     key here/GraphLab-Create-License.tar.gz
 
-Ensure installation of IPython and IPython Notebook
+## Ensure installation of IPython and IPython Notebook
 
-# Install or update IPython and IPython Notebook
+## Install or update IPython and IPython Notebook
 
     conda install ipython-notebook
 
