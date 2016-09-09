@@ -4,7 +4,7 @@ Abstract: The Bitcoin currency is a publicly available, transparent, large scale
 
 ## Prerequesites
 
-Please note that installing the bitcoin blockchain and running all scripts may take ~ 10 days as the blockchain download is around 160GB and needs to be indexed.
+Please note that installing the bitcoin blockchain and running all scripts may take ~ 10 days as the blockchain download is around 160GB and needs to be indexed. The instructions given here are from the bitcoingraph tool.
 
 ### Bitcoin Core setup and configuration
 
