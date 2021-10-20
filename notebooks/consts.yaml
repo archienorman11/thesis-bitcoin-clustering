@@ -1,0 +1,23 @@
+labels:
+- success 
+- error
+path_to_transactional_data_build:
+- output/nodes/data/
+path_to_transactional_data_calculate:
+- ../code/graph-code/data/blocks_417500_424572/
+path_to_whoiswho:
+- ../code/identity_scraper/output/whoiswho.json
+path_to_blockinfo:
+- ../code/identity_scraper/output/b_info_out.json
+path_to_explorer:
+- ../code/identity_scraper/output/explorer.json
+cant_find_data:
+- cant find data
+temp:
+- output/nodes/temp
+computed_data_set:
+- output/computed_dataset.csv
+import_error:
+- Key libraries cannot be loaded
+lock:
+- true
